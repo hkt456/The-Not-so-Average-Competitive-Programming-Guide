@@ -263,5 +263,5 @@ void quickSort(int arr[], int low, int high) {
 
 - It can be deduced that with the input size of 10^6, Merge Sort and Quick Sort reigns supriority over Bubble Sort and Selection Sort. However, we can not say the same with other different sizes. Your choice of algorithm design is dependent on the information and detaild of the problem that needs to be solved, and by using BigO notation, you can estimate what design is the most suitable.
 ## Authors
-- Huynh Khac Tam: [hkt456](https://github.com/doctorbingchilling)
+- Huynh Khac Tam: [hkt456](https://github.com/hkt456)
 - Huynh Gia Bao: [doctorbingchilling](https://github.com/doctorbingchilling)
