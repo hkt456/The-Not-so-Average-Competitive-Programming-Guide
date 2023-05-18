@@ -14,17 +14,15 @@ If there are k nested loops, the time complexity of the algorithm will be: O(n^k
 
 - For example, the time complexity of this code block is O(n):
 ```c++
-int n=0;
 for(int i=0; i<n; i++){
-    //n++;
+    //code
 }
 ```
 - The time complexity of this code block will be O(n^2):
 ```c++
-int s=0;
 for(int i=0; i<n; i++){
     for(int j=o; j<n; j++){
-        s++;
+        //code
     }
 }
 ```
@@ -34,45 +32,45 @@ for(int i=0; i<n; i++){
 
 - Example 1:
 ```c++
-int s=0;
 for(int i=0; i<=23*n; i++){
-    s++;
+    //code
 }
 ```
 
 - Example 2:
 ```c++
-int s=0;
 for(int i=0; i<=n+5; i++){
-    s++;
+    // code
 }
 ```
 
 - Example 3:
 ```c++
-int s=0;
 for(int i=0; i<=n; i+=5){
-    s++;
+    // code
 }
 ```
 #### What codeblock to consider?
 - Almost all the times, your program will consist of a lot of loops and other components, each of them will most likely have their own different time complexity. However, when considering the time complexity of your algorithm as a whole, you will only need to take into account the time complexity of the slowest "loops", or "code phase" to be more exact. 
 - Consider the following codeblock:
 ```c++
-int s=0;
 for(int i=0; i<n; i++){
-    s++;
+    // code
 }
 for(int i=0; i<n ;i++){
     for(int j=0; j<n; j++){
-        s++;
+    // code
     }
 }
 for(int i=0; i<n; i++){
-    for(int j=0; j<)
+    for(int j=0; j<n ; j++){
+        for(int m=0; m<n; m++){
+            //code
+        }
+    }
 }
-
-
+```
+- Notice how the time complexity of each of the loops vary, namely O(n), O(n^2), and O(n^3). Given that the third loop will take the longest to run based on its time complexity, the time complexity of the whole algorithm will be O(n^3).
 ## Authors
 - Huynh Khac Tam: [hkt456](https://github.com/doctorbingchilling)
 - Huynh Gia Bao: [doctorbingchilling](https://github.com/doctorbingchilling)
