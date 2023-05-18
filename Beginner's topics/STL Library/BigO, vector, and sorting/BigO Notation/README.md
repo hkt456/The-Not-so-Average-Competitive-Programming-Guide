@@ -86,10 +86,16 @@ for(int i=0; i<n; i++){
 
 ### Complexity Cases
 #### There will be, of course, common time complexities that you will face:
-1. O(1):
-2. O(\ln(x)):
-3. O()
+1. O(1): This is a constant-time algorithm where the time complexity of the algorithm is completely independent of the input. Usually this means that the algorithm uses some kinds of formulas to immediately give out the answer.
+2. O(log(n)): A logarithmic algorithm indicates that on each step, the algorithm havles the input size once, making it super effective and fast. 
+3. O(sqrt(n)): A square root algorithm is slower than a logarithmic algorithm, but faster than a linear one. It shows that in some sense, your algorithm is able to cut down the processing time by half.
+4. O(n): A linear algorithm goes through each data point only once. This is usually the best that you can get when solving an algorithmic problem.
+5. O(nlog(n)): This means that each operation will have the time complexity of O(nlog(n)). You will often see this time complexity when carrying out sorting algorithms.
+6. O(n^2): A quadratic algorithm means that it goes through all pairs within the dataset, often containing two nested loops.
+7. O(n^3): A cubic algorithm means that it goes through all triplets within the dataset, often containing three nested loops. 
+8. O(2^n): This algorithm will go through all possible subsets within the dataset.
+9. O(n!): This algorithm will go through all possible permutations within the dataset. 
+
 ## Authors
 - Huynh Khac Tam: [hkt456](https://github.com/doctorbingchilling)
 - Huynh Gia Bao: [doctorbingchilling](https://github.com/doctorbingchilling)
-i
