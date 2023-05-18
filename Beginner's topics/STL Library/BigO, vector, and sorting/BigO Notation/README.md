@@ -71,6 +71,18 @@ for(int i=0; i<n; i++){
 }
 ```
 - Notice how the time complexity of each of the loops vary, namely O(n), O(n^2), and O(n^3). Given that the third loop will take the longest to run based on its time complexity, the time complexity of the whole algorithm will be O(n^3).
+
+#### More the just n
+- The time complexity of your algorithms also depends on how many and what variables are contributing to your algorithm:
+- Consider the following codeblock:
+```c++
+for(int i=0; i<n; i++){
+    for(int j=0; j<m; j++){
+        //code
+    }
+}
+```
+- The above codeblock will have the time complexity of O(nm)
 ## Authors
 - Huynh Khac Tam: [hkt456](https://github.com/doctorbingchilling)
 - Huynh Gia Bao: [doctorbingchilling](https://github.com/doctorbingchilling)
