@@ -107,6 +107,128 @@ for(int i=0; i<n; i++){
 |n<=5000    |O(n^2)                  |
 |n<=10^6    |O(nlog(n)) or O(n)      |
 |n>10^6     |O(log(n)) or O(1)       |
+### Sorting algorithms
+- Now to witness the power of the BigO Notation and why you should understand it, I will give out different sorting algorithms and analyze its effects when trying to sort an input with the size of 10^6.
+#### Bubble Sort:
+```c++
+void bubbleSort(int arr[], int size) {
+    for (int i = 0; i < size - 1; ++i) {
+        for (int j = 0; j < size - i - 1; ++j) {
+            if (arr[j] > arr[j + 1]) {
+                // Swap elements
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+```
+#### Selection Sort:
+```c++
+void selectionSort(int arr[], int size) {
+    for (int i = 0; i < size - 1; ++i) {
+        int minIndex = i;
+        for (int j = i + 1; j < size; ++j) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        // Swap elements
+        int temp = arr[minIndex];
+        arr[minIndex] = arr[i];
+        arr[i] = temp;
+    }
+}
+
+```
+#### Merge Sort:
+```c++
+void merge(int arr[], int left, int mid, int right) {
+    int size1 = mid - left + 1;
+    int size2 = right - mid;
+
+    // Create temporary arrays
+    int leftArr[size1], rightArr[size2];
+
+    // Copy data to temporary arrays
+    for (int i = 0; i < size1; ++i) {
+        leftArr[i] = arr[left + i];
+    }
+    for (int j = 0; j < size2; ++j) {
+        rightArr[j] = arr[mid + 1 + j];
+    }
+
+    // Merge the temporary arrays back into arr
+    int i = 0, j = 0, k = left;
+    while (i < size1 && j < size2) {
+        if (leftArr[i] <= rightArr[j]) {
+            arr[k] = leftArr[i];
+            ++i;
+        } else {
+            arr[k] = rightArr[j];
+            ++j;
+        }
+        ++k;
+    }
+
+    // Copy the remaining elements of leftArr, if any
+    while (i < size1) {
+        arr[k] = leftArr[i];
+        ++i;
+        ++k;
+    }
+
+    // Copy the remaining elements of rightArr, if any
+    while (j < size2) {
+        arr[k] = rightArr[j];
+        ++j;
+        ++k;
+    }
+}
+
+void mergeSort(int arr[], int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+        mergeSort(arr, left, mid);
+        mergeSort(arr, mid + 1, right);
+        merge(arr, left, mid, right);
+    }
+}
+```
+#### Quick Sort:
+```c++
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high];
+    int i = low - 1;
+
+    for (int j = low; j <= high - 1; ++j) {
+        if (arr[j] < pivot) {
+            // Swap elements
+            ++i;
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+
+    // Swap pivot with the element at the correct position
+    int temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
+
+    return i + 1;
+}
+
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
+        int pivotIndex = partition(arr, low, high);
+
+        quickSort(arr, low, pivotIndex - 1);
+        quickSort(arr, pivotIndex + 1, high);
+    }
+}
+```
 
 ## Authors
 - Huynh Khac Tam: [hkt456](https://github.com/doctorbingchilling)
