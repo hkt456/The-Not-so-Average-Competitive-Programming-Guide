@@ -95,6 +95,18 @@ for(int i=0; i<n; i++){
 7. O(n^3): A cubic algorithm means that it goes through all triplets within the dataset, often containing three nested loops. 
 8. O(2^n): This algorithm will go through all possible subsets within the dataset.
 9. O(n!): This algorithm will go through all possible permutations within the dataset. 
+#### Taking advantage of BigO Notation
+- After analyzing the time complexity, it is possible to estimate whether your algorithm is suitable for the limits that the problem has set out. All problems will indicate the time limit and the input size. For example: time limit: 1 second, 0<n=10^6.
+- Given the input size, you can combine the information the problem has given and the time complexity of your "idea algorithm". The table below is a rough estimation of what time complexity is suitable for each input size to achieve the time limit of 1 second:
+
+|Input size |Required time complexity|
+|-----------|------------------------|
+|n<=10      |O(n!)                   |
+|n<=20      |O(2^n)                  |
+|n<=500     |O(n^3)                  |
+|n<=5000    |O(n^2)                  |
+|n<=10^6    |O(nlog(n)) or O(n)      |
+|n>10^6     |O(log(n)) or O(1)       |
 
 ## Authors
 - Huynh Khac Tam: [hkt456](https://github.com/doctorbingchilling)
