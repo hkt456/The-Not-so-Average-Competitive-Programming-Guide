@@ -83,6 +83,9 @@ for(int i=0; i<n; i++){
 }
 ```
 - The above codeblock will have the time complexity of O(nm)
+
+### Complexity Cases
+
 ## Authors
 - Huynh Khac Tam: [hkt456](https://github.com/doctorbingchilling)
 - Huynh Gia Bao: [doctorbingchilling](https://github.com/doctorbingchilling)
