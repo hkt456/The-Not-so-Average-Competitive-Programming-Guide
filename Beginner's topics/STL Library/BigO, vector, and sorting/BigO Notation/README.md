@@ -231,29 +231,35 @@ void quickSort(int arr[], int low, int high) {
 ```
 #### The Analysis:
 
-##### Bubble Sort:
+- Bubble Sort:
 
-Average case: O((10^6)^2) = O(10^12) = O(1 trillion)
-Worst case: O((10^6)^2) = O(10^12) = O(1 trillion)
-Best case: O(10^6) = O(1 million)
+    - Average case: O((10^6)^2) = O(10^12) = O(1 trillion)
+    - Worst case: O((10^6)^2) = O(10^12) = O(1 trillion)
+    - Best case: O(10^6) = O(1 million)
 
-##### Selection Sort:
+- Selection Sort:
 
-Average case: O((10^6)^2) = O(10^12) = O(1 trillion)
-Worst case: O((10^6)^2) = O(10^12) = O(1 trillion)
-Best case: O((10^6)^2) = O(10^12) = O(1 trillion)
+    - Average case: O((10^6)^2) = O(10^12) = O(1 trillion)
+    - Worst case: O((10^6)^2) = O(10^12) = O(1 trillion)
+    - Best case: O((10^6)^2) = O(10^12) = O(1 trillion)
 
-##### Merge Sort:
+- Merge Sort:
 
-Average case: O(10^6 log(10^6)) = O(6 million)
-Worst case: O(10^6 log(10^6)) = O(6 million)
-Best case: O(10^6 log(10^6)) = O(6 million)
+    - Average case: O(10^6 log(10^6)) = O(6 million)
+    - Worst case: O(10^6 log(10^6)) = O(6 million)
+    - Best case: O(10^6 log(10^6)) = O(6 million)
 
-##### Quick Sort:
+- Quick Sort:
 
-Average case: O(10^6 log(10^6)) = O(6 million)
-Worst case: O((10^6)^2) = O(10^12) = O(1 trillion) (unlikely with a random pivot choice, but possible with a bad pivot selection)
-Best case: O(10^6 log(10^6)) = O(6 million)
+    - Average case: O(10^6 log(10^6)) = O(6 million)
+    - Worst case: O((10^6)^2) = O(10^12) = O(1 trillion) (unlikely with a random pivot choice, but possible with a bad pivot selection)
+    - Best case: O(10^6 log(10^6)) = O(6 million)
+### Summary:
+- In summary, the time complexities for each algorithm with a dataset of size 10^6 are:
+
+1. Bubble Sort and Selection Sort have a time complexity of O(1 trillion), which makes them highly inefficient for large datasets.
+
+2. Merge Sort and Quick Sort have a time complexity of O(6 million), making them more efficient options for sorting a dataset of size 10^6.
 ## Authors
 - Huynh Khac Tam: [hkt456](https://github.com/doctorbingchilling)
 - Huynh Gia Bao: [doctorbingchilling](https://github.com/doctorbingchilling)
