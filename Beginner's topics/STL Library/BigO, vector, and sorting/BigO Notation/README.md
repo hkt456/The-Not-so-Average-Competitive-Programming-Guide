@@ -19,6 +19,15 @@ for(int i=0; i<n; i++){
     n++;
 }
 ```
+- The time complexity of this code block will be O(n^2):
+```c++
+int n=0;
+for(int i=0; i<n; i++){
+    for(int j=o; j<n; j++){
+        n++;
+    }
+}
+```
 
 
 
