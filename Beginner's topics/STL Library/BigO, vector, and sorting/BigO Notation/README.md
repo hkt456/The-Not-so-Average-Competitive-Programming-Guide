@@ -85,7 +85,10 @@ for(int i=0; i<n; i++){
 - The above codeblock will have the time complexity of O(nm)
 
 ### Complexity Cases
-
+#### There will be, of course, common time complexities that you will face:
+1. O(1):
+2. O(\ln(x)):
+3. O()
 ## Authors
 - Huynh Khac Tam: [hkt456](https://github.com/doctorbingchilling)
 - Huynh Gia Bao: [doctorbingchilling](https://github.com/doctorbingchilling)
