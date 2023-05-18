@@ -9,7 +9,16 @@
 
 #### Loops
 
+- Loops are perhaps the killer of your algorithm. The more loops you use inside your algorithm, the longer it should take to process your input. The more nested loops the algorithm contains, the longer it will take to finish.
+If there are k nested loops, the time complexity of the algorithm will be: O(n^k).
 
+- For example, the time complexity of this code block is O(n):
+```c++
+int n=0;
+for(int i=0; i<n; i++){
+    n++;
+}
+```
 
 
 
