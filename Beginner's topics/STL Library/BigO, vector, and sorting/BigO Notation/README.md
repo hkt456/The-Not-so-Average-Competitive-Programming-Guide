@@ -29,6 +29,33 @@ for(int i=0; i<n; i++){
 }
 ```
 
+#### Magnitude Only
+- An important thing to take note when working with BigO notation is that it DOES NOT represents how many times your code block will be executed, only the order of magnitude. The below code blocks have different increments and limits to their loops, but all of them have the time complexity of O(n):
+
+- Example 1:
+```c++
+int n=0;
+for(int i=0; i<=23*n; i++){
+    n++;
+}
+```
+
+- Example 2:
+```c++
+int n=0;
+for(int i=0; i<=n+5; i++){
+    n++;
+}
+```
+
+- Example 3:
+```c++
+int n=0;
+for(int i=0; i<=n; i+=5){
+    n++;
+}
+```
+
 
 
 ## Authors
