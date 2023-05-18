@@ -229,7 +229,31 @@ void quickSort(int arr[], int low, int high) {
     }
 }
 ```
+#### The Analysis:
 
+##### Bubble Sort:
+
+Average case: O((10^6)^2) = O(10^12) = O(1 trillion)
+Worst case: O((10^6)^2) = O(10^12) = O(1 trillion)
+Best case: O(10^6) = O(1 million)
+
+##### Selection Sort:
+
+Average case: O((10^6)^2) = O(10^12) = O(1 trillion)
+Worst case: O((10^6)^2) = O(10^12) = O(1 trillion)
+Best case: O((10^6)^2) = O(10^12) = O(1 trillion)
+
+##### Merge Sort:
+
+Average case: O(10^6 log(10^6)) = O(6 million)
+Worst case: O(10^6 log(10^6)) = O(6 million)
+Best case: O(10^6 log(10^6)) = O(6 million)
+
+##### Quick Sort:
+
+Average case: O(10^6 log(10^6)) = O(6 million)
+Worst case: O((10^6)^2) = O(10^12) = O(1 trillion) (unlikely with a random pivot choice, but possible with a bad pivot selection)
+Best case: O(10^6 log(10^6)) = O(6 million)
 ## Authors
 - Huynh Khac Tam: [hkt456](https://github.com/doctorbingchilling)
 - Huynh Gia Bao: [doctorbingchilling](https://github.com/doctorbingchilling)
