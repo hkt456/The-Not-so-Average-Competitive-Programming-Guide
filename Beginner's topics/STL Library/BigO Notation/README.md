@@ -107,6 +107,9 @@ for(int i=0; i<n; i++){
 |n<=5000    |O(n^2)                  |
 |n<=10^6    |O(nlog(n)) or O(n)      |
 |n>10^6     |O(log(n)) or O(1)       |
+
+![BigO Notation](../../../assets/bigochart.jpeg)
+
 ### Sorting algorithms
 - Now to witness the power of the BigO Notation and why you should understand it, I will give out different sorting algorithms and analyze its effects when trying to sort an input with the size of 10^6.
 #### Bubble Sort:
