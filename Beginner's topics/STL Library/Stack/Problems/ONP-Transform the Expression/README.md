@@ -26,3 +26,4 @@ at+bac++cd+^*
 ```
 ### Solution
 - To solve this problem, we need to transform the expression to RPN form.
+- The idea behind the algorithm is even simpler than the previous problem. This time we will go through each character within the formula and process it depending on the definition of RPN. 
