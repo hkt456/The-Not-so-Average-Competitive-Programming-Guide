@@ -21,4 +21,5 @@
 0 1 0 3 4 3 3 7
 ```
 ### Solution
-- 
+- The idea behind the algorithm is that we take into account all the elements in the inputs. If at the top of the stack exists a value that is smaller than the element we are considering, that element will be the "nearest smaller values to be found". If the element at the top of the stack does not qualify, it will get deleted because now, the elemet we are considering will be the potential "nearest smaller value" for the following elements in the array. 
+- In a nutshell, we are using the stack data struture as candidate list for the "nearest smaller value" for the upcoming elements, and those candidates will be eliminated the moment we find a more potential and suitable candidate.
