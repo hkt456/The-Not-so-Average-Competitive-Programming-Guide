@@ -26,3 +26,4 @@ There are several test cases. The first line of each test case contains a single
 yes
 ```
 ### Solution
+- In the above problem, you have to find whether is it possible to arrange the given sequence of number in increasing sorted order or not by using the side lane. As from side lane, the vehicle entering first will leave in the last, so it follows LIFO order which makes it stack.
