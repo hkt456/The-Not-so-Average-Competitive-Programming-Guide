@@ -10,16 +10,14 @@
 ## How to use
 - Some of the functions that you can use with the Stack data structure are:
 ```c++
-#include <stack>
-using namespace std;
-int main(){
-    empty(); // Returns whether the stack is empty; Time complexity: O(1)
-    size(); // Returns the current size of your stack; Time complexity: O(1)
-    top(); // Returns a reference to the top most element of the stack; Time complexity: O(1)
-    push(x); // Add the element x at the top of the stack; Time complexity: O(1)
-    pop(); // . Deletes the most recent added element to the stack ; Time complexity: O(1)
 
-}
+empty(); // Returns whether the stack is empty; Time complexity: O(1)
+size(); // Returns the current size of your stack; Time complexity: O(1)
+top(); // Returns a reference to the top most element of the stack; Time complexity: O(1)
+push(x); // Add the element x at the top of the stack; Time complexity: O(1)
+pop(); // . Deletes the most recent added element to the stack ; Time complexity: O(1)
+
+
 
 ```
 ![stackimg](../../../assets/stackimg.png)
