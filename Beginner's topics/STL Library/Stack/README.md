@@ -56,6 +56,8 @@ int main() {
 }
 
 ```
+## Some Problems
+- In this same folder, I have added anothger folder dedicated to solving some examplary stack-related problems with my own editorials. You can go check it out.
 ## Authors
 - Huynh Khac Tam: [hkt456](https://github.com/hkt456)
 - Huynh Gia Bao: [doctorbingchilling](https://github.com/doctorbingchilling)
