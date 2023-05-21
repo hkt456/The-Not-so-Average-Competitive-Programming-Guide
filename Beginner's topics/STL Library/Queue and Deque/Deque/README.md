@@ -29,7 +29,45 @@
 ## Example
 - Here is an example of Deque in C++ so that you can better understand it:
 ```c++
+#include <iostream>
+#include <deque>
 
+int main() {
+    std::deque<int> dequeNum; // Declaration of a deque of integers
+
+    // Inserting elements at the back of the deque
+    dequeNum.push_back(10);
+    dequeNum.push_back(20);
+    dequeNum.push_back(30);
+
+    // Inserting elements at the front of the deque
+    dequeNum.push_front(5);
+    dequeNum.push_front(2);
+
+    // Accessing elements
+    std::cout << "Front element: " << dequeNum.front() << std::endl; // Output: 2
+    std::cout << "Back element: " << dequeNum.back() << std::endl; // Output: 30
+
+    // Removing elements from the front and back
+    dequeNum.pop_front();
+    dequeNum.pop_back();
+
+    // Displaying the elements in the deque
+    std::cout << "Deque elements: ";
+    for (const auto& num : dequeNum) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl; // Output: Deque elements: 5 10 20
+
+    // Checking if the deque is empty
+    bool isEmpty = dequeNum.empty();
+    std::cout << "Is deque empty? " << (isEmpty ? "Yes" : "No") << std::endl; // Output: No
+
+    // Getting the size of the deque
+    std::cout << "Deque size: " << dequeNum.size() << std::endl; // Output: Deque size: 3
+
+    return 0;
+}
 
 ```
 ## Some Problems
