@@ -24,7 +24,7 @@
 .size(); // Get the number of elements in the deque
 
 ```
-![dequeimg](../../../assets/dequeimg.png)
+![dequeimg](../../../../assets/dequeimg.png)
 
 ## Example
 - Here is an example of Deque in C++ so that you can better understand it:
