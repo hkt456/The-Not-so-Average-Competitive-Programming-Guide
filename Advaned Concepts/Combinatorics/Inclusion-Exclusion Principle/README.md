@@ -3,6 +3,8 @@
 ## Description
 - The Inclusion-Exclusion Principle is one of the fundamental mathematical principle and technique used in solving counting problems. It comes up in many competitive programming problems related to combinatorics. 
 - To compute the size of a union of multiple sets, it is necessary to sum the sizes of these sets separately, and then subtract the sizes of all pairwise intersections of the sets, then add back the size of the intersections of triples of the sets, subtract the size of quadruples of the sets, and so on, up to the intersection of all sets.
+- General Formula for the Inclusion-Exclusion Principle:
+$${\cal P} \left(\bigcup_{i=1}^n A_i \right) = \sum_{\emptyset \neq J\subseteq \{1,2,\ldots ,n\}} (-1)^{|J|-1}\ {\cal P}{\Biggl (}\bigcap_{j\in J}A_{j}{\Biggr )}$$ 
 - Intuitively, it's about trying to eleminate double counting when we calculate the size of a union of sets.
 ### Applications
 - Let us consider a simple combinatorics problem. Calculate the number of ways that permutations of numbers from $0$ to $9$ exist such that the first element is greater than $1$ and the last one is less than $8$. This is a very standard problem in Combinatorics and should be easily doable.
